@@ -3,7 +3,7 @@ const { CohereClient } = require("cohere-ai");
 
 // Initialize the Cohere client with an API token
 const cohere = new CohereClient({
-  token: "srhxvPQOiaNZPn3Clo2OlkBnLc0wIDkmNl8W5lNa", // Replace with a secure token
+  token: "your_cohere_api_token", // Replace with a secure token
 });
 
 // Export the handler function for an API route (used in frameworks like Next.js)

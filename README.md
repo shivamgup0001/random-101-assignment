@@ -15,3 +15,18 @@ The Travel Itinerary Generator is a web application that allows users to create 
 - **Frontend**: React, Next.js, Tailwind CSS
 - **Backend**: Node.js, Cohere AI
 - **API**: Cohere API for generating itineraries
+
+## API Integration
+
+The application uses the Cohere API to generate itineraries. Configure the API by replacing `your_cohere_api_token` with your actual token in the `api/generate-answer.js` file.
+
+**File:** `api/generate-answer.js`
+
+```javascript
+const { CohereClient } = require("cohere-ai");
+
+const cohere = new CohereClient({
+  token: "your_cohere_api_token", // Replace with your actual API token
+});
+
+
